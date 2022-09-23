@@ -6,8 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
+   
+    <main class="container mt-5 row border border-primary">
+        <h1 class=" text-center mb-5">CALCULADORA DE IMC</h1>
+        <div class="contenedor1 col-6 text-center p-4 border border-primary">
+            <p class="texto1 mb-3">Peso (kilogramos)</p>
+            <input class=" form-control mb-3 " type="number" id="peso">
+            <p class="texto1 mb-3">altura(metros)</p>
+            <input class="form-control mb-3" type="number" id="altura">
+            <br>
+            <button class="btn btn-primary" id="calcular">CALCULAR</button>
+            <button class="btn btn-primary" id="reiniciar">REINICIAR</button>
+        </div>
+        <div class="contenedor2 col-6 border border-primary">
+            <div  id="output"></div>
+            <div id="imagen">
+                <img src="https://drajohannacobos.com/wp-content/uploads/2021/10/escala-de-obesidad-cobos.png" alt="imc" width="100%" height="100%">
+            </div>
+        </div>
+        
+    </main>
     <script src="./main.js"></script>
     
 </body>
