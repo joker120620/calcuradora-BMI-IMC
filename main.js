@@ -5,8 +5,15 @@ function calcular() {
     let alturaPersona=document.getElementById('altura').value;
     if(alturaPersona%1==0){
         alturaPersona=alturaPersona/100;
-        let imc=pesoPersona/(alturaPersona*alturaPersona);
-        document.getElementById('output').innerHTML=imc.toFixed(1);
+        let imc=+pesoPersona/(alturaPersona*alturaPersona);
+        if(isNaN(imc)){
+            document.getElementById('output').innerHTML="";
+            
+        }else{
+            document.getElementById('output').innerHTML=imc.toFixed(1);
+            
+        }
+       
         if(imc<=18.4){
             document.getElementById("output").style.backgroundColor="rgb(101, 250, 242)";
         }else if(imc>18.5 && imc<25){
@@ -23,8 +30,14 @@ function calcular() {
         }
 
     }else{
-        let imc=pesoPersona/(alturaPersona*alturaPersona);
-        document.getElementById('output').innerHTML=imc.toFixed(1);
+        let imc=+pesoPersona/(alturaPersona*alturaPersona);
+        if(isNaN(imc)){
+            document.getElementById('output').innerHTML="";
+            
+        }else{
+            document.getElementById('output').innerHTML=imc.toFixed(1);
+            
+        }
         if(imc<=18.4){
             document.getElementById("output").style.backgroundColor="cyan";
         }else if(imc>=18.5 && imc<25){
@@ -48,6 +61,7 @@ function reiniciar() {
     document.getElementById('peso').value="";
     document.getElementById('altura').value="";
     document.getElementById('output').innerHTML="";
+    document.getElementById("output").style.backgroundColor="transparent";
 
 
     

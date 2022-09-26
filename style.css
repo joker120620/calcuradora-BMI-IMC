@@ -26,12 +26,13 @@
     margin-left: 200px;
     padding: 35px;
     border: solid 1px ;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 #imagen{
     width: 500px;
     height: 160px;
     margin-top: 50px;
+
     
 }
