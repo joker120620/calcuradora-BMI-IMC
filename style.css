@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+#contenedor{
+    margin-left: 100px;
+    background-color: rgb(192, 191, 191);
+    padding: 20px;
+    border-radius: 20px;
+}
 #peso{
     width: 100px;
     margin-left: 200px;
@@ -26,6 +32,6 @@
 #imagen{
     width: 500px;
     height: 160px;
-    margin-top: 100px;
+    margin-top: 50px;
     
 }
